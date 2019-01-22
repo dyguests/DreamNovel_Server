@@ -17,7 +17,7 @@ class MainController {
      *
      * @return 首页
      */
-    @RequestMapping(value = ["/"], method = arrayOf(RequestMethod.GET))
+    @RequestMapping(value = ["/"], method = [RequestMethod.GET])
     fun index(modelMap: ModelMap): String {
         modelMap["Title"] = "你好 SpringMVC3"
         modelMap["END"] = "你好 SpringMVC3!"
