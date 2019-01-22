@@ -20,7 +20,7 @@ class MainController {
     @RequestMapping(value = ["/"], method = [RequestMethod.GET])
     fun index(modelMap: ModelMap): String {
         modelMap["Title"] = "你好 SpringMVC"
-        modelMap["END"] = "你好 SpringMVC!"
+        modelMap["END"] = "你好 SpringMVC2!"
         return "index"
     }
 }

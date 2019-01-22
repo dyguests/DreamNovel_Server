@@ -23,10 +23,21 @@ repositories {
 
 def springVersion = "4.3.7.RELEASE"
 
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile group: 'junit', name: 'junit', version: '4.12'
-
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     // Spring依赖
     compile(
             "org.springframework:spring-aop:$springVersion",
@@ -47,15 +58,4 @@ dependencies {
             "org.springframework:spring-webmvc:$springVersion",
             "org.springframework:spring-webmvc-portlet:$springVersion"
     )
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-}
-compileKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
-compileTestKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
 }
