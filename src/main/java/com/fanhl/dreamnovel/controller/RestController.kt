@@ -13,8 +13,6 @@ class RestController {
     private val counter = AtomicLong()
 
     @RequestMapping("/greeting")
-    fun greeting(@RequestParam(value = "name", defaultValue = "World") name: String): Greeting {
-        return Greeting(counter.incrementAndGet(),
-                String.format(template, name))
-    }
+    fun greeting(@RequestParam(value = "name", defaultValue = "World") name: String) =
+            "[123]"
 }
