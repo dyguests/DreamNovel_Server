@@ -1,4 +1,4 @@
-# SpringDemo
+# DreamNovel
 
 Spring + springMVC + mybatis 演示项目。
 
