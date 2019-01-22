@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <display-name>SpringDemo Web Application</display-name>
+    <display-name>DreamNovel Web Application</display-name>
 
     <!-- Spring MVC servlet -->
     <servlet>
