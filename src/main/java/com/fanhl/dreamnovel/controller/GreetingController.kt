@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong
 
 
 @RestController
-class RestController {
+class GreetingController {
     private val template = "Hello, %s!"
     private val counter = AtomicLong()
 
