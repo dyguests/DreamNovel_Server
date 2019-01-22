@@ -1,3 +1,13 @@
+buildscript {
+    ext.kotlin_version = '1.2.31'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
 group 'com.fanhl.dreamnovel'
 version '1.0-SNAPSHOT'
 
@@ -38,15 +48,6 @@ dependencies {
             "org.springframework:spring-webmvc-portlet:$springVersion"
     )
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-}
-buildscript {
-    ext.kotlin_version = '1.2.31'
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
 }
 compileKotlin {
     kotlinOptions {
