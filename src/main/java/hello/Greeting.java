@@ -1,6 +1,7 @@
-package com.fanhl.dreamnovel.model;
+package hello;
 
 public class Greeting {
+
     private final long id;
     private final String content;
 
